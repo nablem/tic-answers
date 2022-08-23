@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Bazaarvoice Implementation Engineer Technical Assessment</title>
+    <meta name="description" content="Technical Assessment given to API Implementation Engineer Applicants">
+    <meta name="author" content="Bazaarvoice">
+    <link type="text/css" rel="stylesheet" href="css/normalize.css">
+    <link type="text/css" rel="stylesheet" href="js/syntaxhighlighter/styles/shCore.css">
+    <link type="text/css" rel="stylesheet" href="js/syntaxhighlighter/styles/shThemeDefault.css">
+    <link type="text/css" rel="stylesheet" href="css/questions.css">
+    <link type="text/css" rel="stylesheet" href="css/answers.css">
+    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+    <style>
+        #header-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        #candidate-name {
+            color: white;
+            font-weight: bold;
+        }
+        .inline-code {
+            font-family: Courrier New;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <header>
+            <div class="inner" id="header-inner">
+                <h1>Implementation Engineer Technical Assessment</h1>
+                <div id="candidate-name">Name: Nabil Lemenuel</div>
+            </div>
+        </header>
+        <div id="instructions">
+            <div class="inner">
+                <h2>Instructions</h2>
+                <p>
+                    Thank you for interviewing at Bazaarvoice! This document serves as the Bazaarvoice Technical Assessment for Implementation Engineers. The purpose of this assessment is to gauge your fluency of the core toolset our engineers use on a daily basis.
+                </p>
+                <p>
+                    The areas we measure on are skill, knowledge, logic, and communication so even if you don't know how to write the code for a specific question, pseudo code or an explanation of your troubleshooting steps are better than leaving it blank.
+                </p>
+                <p>
+                    Please follow these guidelines:
+                </p>
+                <ul>
+                    <li>
+                        You may use online resources (e.g. <a href="http://www.google.com/">Google</a>.)
+                    </li>
+                    <li>
+                        You may not consult with any other person to assist you in this test.
+                    </li>
+                    <li>
+                        This page must render consistently in the latest stable (non-beta) version of Chrome, Firefox, Edge, and Safari.
+                    </li>
+                    <li>
+                        Provide your answers by editing this document within the <code>TODO</code> comments.
+                        <br/>
+                        <pre class="brush: html">
+                                &lt;div class=&quot;answer&quot;&gt;
+                                    &lt;p&gt;
+                                        &lt;span class=&quot;prefix&quot;&gt;Answer:&lt;/span&gt;
+                                    &lt;/p&gt;
+                                    &lt;!-- TODO - Begin Answer --&gt;
+
+                                    &lt;!-- End Answer --&gt;
+                                &lt;/div&gt;
+                            </pre>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="main" role="main">
+            <div class="info">
+                Questions A &amp; B are sample questions that have <b>already been answered.</b>
+                <br/> Read them closely and use their source code as an example of how to complete this test.
+            </div>
+            <p class="listPrefix">Example A</p>
+            <div id="sampleQuestionCssHtml" class="sampleQuestionContainer">
+                <div class="prompt">
+                    <p>
+                        <span class="prefix">Prompt:</span> Recreate text/formatting (excluding the border) depicted in the following image
+                    </p>
+                    <img src="img/sampleQuestion1.png" title="Use this image to guide your answer." />
+                </div>
+                <div class="answer">
+                    <p>
+                        <span class="prefix">Answer:</span>
+                    </p>
+                    <div class="sampleCode">
+                        <!-- 
+                            TODO - Begin Answer 
+                        -->
+                        <style type="text/css">
+                        #sampleQuestionCssHtml .sampleCode .edit {
+                            text-decoration: line-through;
+                        }
+                        .exampleQuestion {
+                            font-family: serif;
+                        }
+                        </style>
+                        <p class="exampleQuestion">
+                            When answering a question, there may be <em>more than one</em> possible answer. For example, similar results may be achieved by <strong>adding or modifying the html, adding
+                                styles inline, in a style tag or in answers.css.</strong>. In those situations you will need to <span class="edit">panic and guess randomly</span> use your own better judgment.
+                        </p>
+                        <p class="exampleQuestion">
+                            Relax, try to finish as much as you can in the time allotted and good luck!.
+                        </p>
+                        <!-- 
+                            End Answer
+                        -->
+                    </div>
+                </div>
+            </div>
+            <p class="listPrefix">Example B</p>
+            <div id="sampleQuestionJSComment" class="sampleQuestionContainer">
+                <div class="prompt">
+                    <p>
+                        <span class="prefix">Prompt:</span> : Comment out the following line:
+                    </p>
+                    <pre class="brush: js">
+                            Some questions require familiarity with JavaScript or jQuery.
+                            Others are open-ended.
+                            var exampleB = null;
+                        </pre>
+                </div>
+                <div class="answer">
+                    <p><span class="prefix">Answer:</span></p>
+                    <!-- 
+                        TODO - Begin Answer 
+                    -->
+                    <pre class="brush: js">
+                        // Some questions require familiarity with JavaScript or jQuery.
+                        // Others are open-ended.
+                        var exampleB = null;
+                    </pre>
+                    <!-- 
+                        End Answer
+                    -->
+                </div>
+            </div>
+            <div class="info">Your turn!</div>
+            <h2>Questions</h2>
+            <ol>
+                <li id="applicantName" class="questionContainer">
+                    <div class="prompt">
+                        <p>
+                            <span class="prefix">Prompt:</span> Add your name to this page and make it appear as shown in the following image:
+                        </p>
+                        <img src="img/applicantName.png" title="Use this image to guide your answer." />
+                    </div>
+                    <div class="answer">
+                        <p><span class="prefix">Answer:</span></p>
+                        <!--
+                                TODO - Begin Answer - For this question you will modify the document outside of the
+                                TODO, but be careful not to break anything!
+                        -->
+                        <div class="sampleCode">
+                            <div>Your name should appear at the top of this document as shown in the image.</div>
+                        </div>
+                        <!-- 
+                            End Answer
+                        -->
+                    </div>
+                </li>
+                <li id="consoleError" class="questionContainer">
+                    <div class="prompt">
+                        <p>
+                            <span class="prefix">Prompt:</span> Open your browser’s console. You should see an error.
+                            <ol type="a">
+                                <li>Identify the error and correct it.</li>
+                                <li>How would you explain what you did to a non-technical client?</li>
+                            </ol>
+                        </p>
+                    </div>
+                    <div class="answer">
+                        <p>
+                            <span class="prefix">Answer:</span>
+                        </p>
+                        <!-- 
+                            TODO - Begin Answer 
+                        -->
+                        <p><strong>I added quotes to "Success!".</strong> Without the quotes, Javascript tried to interpret <i>Success!</i> in vain (since this syntax doesn't match with any variable or directive), hence the triggered error... Now that the message is nested between quotes, the <i>console.log</i> function displays it properly on the browser's terminal.</p>
+                        <!-- 
+                            End Answer
+                        -->
+                    </div>
+                </li>
+                <li id="cssOrder" class="questionContainer">
+                    <div class="prompt">
+                        <p>
+                            <span class="prefix">Prompt:</span> The text below is not displaying correctly.
+                            <style type="text/css">
+                            #cssOrder .joke {
+                                background: pink;
+                                padding: 1em;
+                            }
+
+                            .jokeAnswer {
+                                color: black !important;
+                            }
+                            </style>
+                            <div class="joke">
+                                <div class="jokeQuestion">Q: What is the object-oriented way to become wealthy?</div>
+                                <br>
+                                <div style="color: black;" class="jokeAnswer">A: Inheritance</div>
+                                <br>
+                                <div class="notDisplay">^^^ Answer should display</div>
+                            </div>
+                        </p>
+                        <p>
+                            <ol type="a">
+                                <li>Identify the error and correct it.</li>
+                                <li>How would you explain what you did to a non-technical client?</li>
+                            </ol>
+                        </p>
+                    </div>
+                    <!--prompt -->
+                    <div class="answer">
+                        <p>
+                            <span class="prefix">Answer:</span>
+                        </p>
+                        <!-- 
+                            TODO - Begin Answer 
+                        -->
+                        <p>
+                            In the file questions.css on line 46, the CSS code <span class="inline-code">#cssOrder .jokeAnswer {color: pink !important}</span> was conflicting with the CSS from this HTML file.
+                        </p>
+                        <p>
+                            The styling from <i>questions.css</i> had the priority in that case :
+                            <ul>
+                                <li>it includes the <span class="inline-code">!important</span> directive</li>
+                                <li>it is coming from an outside CSS file (that means the code <span class="inline-code">.jokeAnswer {color: black !important}</span> in this HTML file has still a lower priority, even if it also includes <span class="inline-code">!important</span>)</li>
+                            </ul>
+                            The text was invisible because the joke answer's text color in the same as this section's background color.
+                        </p>
+                        <p>
+                            <strong>I removed the <span class="inline-code">!important</span> in <i>questions.css</i> on line 46</strong>, so that the CSS from this HTML file (<span class="inline-code">.jokeAnswer {color: black !important}</span>) gains the priority, and displays the joke answer in black, as specified.
+                        </p>
+                        <p>
+                            Another simple solution could have been to remove the class <span class="inline-code">jokeAnswer</span> from the <span class="inline-code">div</span> including the actual joke answer, so that the inline CSS <span class="inline-code">style="color: black;"</span> is not overriden in any way, whether it be from this HTML file, or an outside CSS file...
+                        </p>
+                        <!--
+                            End Answer
+                        -->
+                    </div>
+                </li>
+                <li id="apiDebugWeather" class="questionContainer">
+                    <div class="prompt">
+                        <p>
+                            <span class="prefix">Prompt:</span>
+                        </p> Mark, your client's web developer, has provided the following code snippet that "doesn't work". </p>
+                        <ol type="a">
+                            <li>Copy the code below and correct it.</li>
+                            <li>How would you explain what you did to a TECHNICAL client?</li>
+                        </ol>
+                        <pre class="brush: js; html-script: true">
+                                <!-- Copy this code into the answer block. -->
+                                $.ajax({
+                                url: 'https://api.weather.gov/gridpoints/EWX/155,90/forecast/hourly'
+                                }).done(function(res) {
+                                    var temp = res.properties.periods[0].temperature;
+                                });
+                                document.getelementbyid('temperature').innerHTML = temp
+                            </pre>
+                    </div>
+                    <div class="answer">
+                        <p>
+                            <span class="prefix">Answer:</span>
+                        </p>
+                        <!-- 
+                            TODO - Begin Answer 
+                        -->
+                        <script type="text/javascript">
+                            // Copy Mark's broken code here. Repair it.
+                            $.ajax({
+                                url: 'https://api.weather.gov/gridpoints/EWX/155,90/forecast/hourly'
+                            }).done(function(res) {
+                                var temp = res.properties.periods[0].temperature;
+                                document.getElementById('temperature').innerHTML = temp
+                            });
+                        </script>
+                        <p>
+                            The temperature is <span id="temperature"></span>F in Austin TX
+                        </p>
+                        <p>
+                            A functional code for this would rather be :
+                            <pre class="brush: js; html-script: true">
+                                $.ajax({
+                                    url: 'https://api.weather.gov/gridpoints/EWX/155,90/forecast/hourly'
+                                }).done(function(res) {
+                                    var temp = res.properties.periods[0].temperature;
+                                    document.getElementById('temperature').innerHTML = temp
+                                });
+                            </pre>
+                            <ul>
+                                <li>The correct name of the <i>Document</i>'s method is <span class="inline-code">getElementById</span> (check the case)</li>
+                                <li>To assign <span class="inline-code">temp</span> to <span class="inline-code">document.getelementbyid('temperature').innerHTML</span>, the assignment directive must be located inside the function passed onto <span class="inline-code">done</span>, because <span class="inline-code">temp</span> is a local variable, only existing in the function's scope.</li>
+                            </ul>
+                        </p>
+                        <!-- 
+                            End Answer
+                        -->
+                    </div>
+                </li>
+                <li id="jsonOutput" class="questionContainer">
+                    <div class="prompt">
+                        <p>
+                            <span class="prefix">Prompt:</span> Below is an API URL.
+                            <pre class="brush: js; html-script: true">
+                                http://stg.api.bazaarvoice.com/data/reviews.json?apiversion=5.4&passkey=caB45h2jBqXFw1OE043qoMBD1gJC8EwFNCjktzgwncXY4&filter=Id:16970607&include=Products
+                                </pre> Write a function that accepts the URL and console logs a message with the following format:
+                            <pre class="brush: js; html-script: true">
+                                {UserNickname} from {UserLocation} gave this product a {Rating}. 
+                                example: John123 from Austin, TX gave this product a 5
+                                </pre>
+                        </p>
+                        <p>
+                            <b>Hint: Use the question above for reference.</b>
+                        </p>
+                        <div class="answer">
+                            <p>
+                                <span class="prefix">Answer:</span>
+                            </p>
+                            <!-- 
+                                TODO - Begin Answer 
+                            -->
+                            <pre class="brush: js; html-script: true">
+                                // CHECK BROWSER'S CONSOLE TO SEE THE ACTUAL RESULT
+
+                                $.ajax({
+                                    url: 'http://stg.api.bazaarvoice.com/data/reviews.json?apiversion=5.4&passkey=caB45h2jBqXFw1OE043qoMBD1gJC8EwFNCjktzgwncXY4&filter=Id:16970607&include=Products'
+                                }).done(function(res) {
+                                    var review = res['Results'][0]
+                                    var userNickname = review['UserNickname']
+                                    var userLocation = review['UserLocation']
+                                    var rating = review['Rating']
+                                    var productName = res['Includes']['Products'][review['ProductId']]['Name']
+
+                                    console.log(`${userNickname} from ${userLocation} gave the product "${productName}" a ${rating}.`)
+                                });
+                            </pre>
+                            <script type="text/javascript">
+                                $.ajax({
+                                    url: 'http://stg.api.bazaarvoice.com/data/reviews.json?apiversion=5.4&passkey=caB45h2jBqXFw1OE043qoMBD1gJC8EwFNCjktzgwncXY4&filter=Id:16970607&include=Products'
+                                }).done(function(res) {
+                                    var review = res['Results'][0]
+                                    var userNickname = review['UserNickname']
+                                    var userLocation = review['UserLocation']
+                                    var rating = review['Rating']
+                                    var productName = res['Includes']['Products'][review['ProductId']]['Name']
+
+                                    console.log(`${userNickname} from ${userLocation} gave the product "${productName}" a ${rating}.`)
+                                });
+                            </script>
+                            <!-- 
+                                End Answer
+                            -->
+                        </div>
+                </li>
+                <li id="cssIssue" class="questionContainer">
+                    <div class="prompt">
+                        <p>
+                            <span class="prefix">Prompt:</span> The overlay menu below looks broken.
+                        </p>
+                        <p>
+                            Identify the issue and explain it to the client. <b>Do not fix it yourself.</b>
+                          
+                        </p>
+                    </div>
+                    <div class="baseEl">
+                        <button>Toggle Menu</button>
+                        <div class="dropdownEl">
+                            <ul>
+                                <li>Item 1</li>
+                                <li>Item 2</li>
+                                <li>Item 3</li>
+                                <li>Item 4</li>
+                                <li>Item 5</li>
+                                <ul>
+                        </div>
+                        <div class="textEl"><span style="font-weight:bold;">Lorem ipsum dolor sit amet</span>consectetur adipiscing elit. Quisque rhoncus rhoncus augue at aliquam. Sed sed faucibus mi. Suspendisse leo velit, molestie in dictum nec, accumsan id diam. Etiam sodales enim felis, eget eleifend lacus pharetra eget. Nam sed enim quam. Pellentesque ullamcorper iaculis lectus quis egestas. Integer fringilla sodales molestie. Ut et tempus lorem.</div>
+                    </div>
+                    <div class="answer">
+                        <p>
+                            <span class="prefix">Answer:</span>
+                        </p>
+                        <!--TODO - Begin Answer -->
+                        <p>
+                            <ul>
+                                <li>The list in transparent: a full opacity would make the items more conspicuous, when menu is toggle on click.</li>
+                                <li>Nothing is happening when laying the cursor onto the list items: CSS hover instructions could be useful to make the active item (the one on which we have our cursor) stand out.</li>
+                                <li>Nothing is happening when clicking on the list items: this could be fixed by adding the desired action into a callback, passed onto the click() function, implemented for each menu item's JQuery element :
+                                <br>
+                                <pre class="brush: js; html-script: false">
+                                    // <li id="item1">Item 1</li>
+                                    $("#item1").click(function(){
+                                        // Action triggered when clicking on Item 1
+                                    });
+                                </pre>
+                                </li>
+                            </ul>
+                        </p>
+                        <p>
+
+                        </p>
+                        <!-- 
+                            End Answer
+                        -->
+                    </div>
+                </li>
+                <li id="rateLimit" class="questionContainer">
+                    <div class="prompt">
+                        <p>
+                            <span class="prefix">Prompt:</span> Below is a callback. Explain what that is and what are good uses for this JS pattern.
+                        </p>
+                        <pre class="brush: js">
+                            function sayTime(time) {
+                              alert('The time is ' + time);
+                            }
+
+                            function findTime(callback) {
+                              time = new Date()
+                              callback(time);
+                            }
+    
+                            findTime(sayTime);
+                        </pre>
+                    </div>
+                    <div class="answer">
+                        <p>
+                            <span class="prefix">Answer:</span>
+                        </p>
+                        <!-- 
+                            TODO - Begin Answer 
+                        -->
+                        <p>
+                        <strong>A callback is basically a function that is passed as an argument onto another function.</strong>
+                        The purpose here is to decouple each action (separation of concern):
+                        the only goal of findTime is to fetch the current time, then pass it onto its callback.
+                        And the only goal of sayTime is to say what time it is.
+                        Hence we can alter the behavior of one function without touching another.
+                        </p>
+                        <p>
+                        Callbacks are used extensively in Javascript, and have many applications, such as:
+                        <ul>
+                            <li>Mapping: applying a function onto each element of an array</li>
+                            <li>Triggering an action after fetching an HTTP request</li>
+                            <li>Handling a browser's event (click on a button, for example)</li>
+                        </ul>
+                        </p>
+                        <!-- 
+                            End Answer
+                        -->
+                    </div>
+                </li>
+                <li id="schemaOrg" class="questionContainer">
+                    <div class="prompt">
+                        <p>
+                            <span class="prefix">Prompt:</span> Enter the following code snippet in <a href="https://search.google.com/structured-data/testing-tool/u/0/">Google Data Testing Tool</a>. You should see an error. Using Google and this <a href="https://knowledge.bazaarvoice.com/wp-content/conversations/en_US/Display/display_integration.html#add-schema-org-markup-1">Knowledge Base article</a>, identify the error. How would you explain to the client the error?
+                        </p>
+                        <pre class="brush: html">
+                                &lt;body&gt;                                    
+                                     <div itemscope itemtype="https://schema.org/Product">
+                                        <h1>ProductName</h1>
+                                        <div id="bvseo-aggregateRatingSection" itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating">
+                                            <span class="bvseo-itemReviewed" itemprop="itemReviewed">Catego for Cats</span> is rated
+                                            <span class="bvseo-ratingValue" itemprop="ratingValue">4.6</span> out of
+                                            <span class="bvseo-bestRating" itemprop="bestRating">5</span> by
+                                            <span class="bvseo-reviewCount" itemprop="reviewCount">27</span>
+                                        </div>
+                                    </div>      
+                                &lt;/body&gt;  
+                            </pre>
+                    </div>
+                    <div class="answer">
+                        <p>
+                            <span class="prefix">Answer:</span>
+                        </p>
+                        <!-- 
+                            TODO - Begin Answer 
+                        -->
+                        <p>
+                            The minimum requirement for implementing a Product schema without triggering an error (according to the standards) is to indicate the actual name of the product.
+                        </p>
+                        <p>
+                            Here, the Product schema is lacking a name. The name being located in the h1, this can be easily fixed, by <strong>adding an <span class="inline-code">itemprop="name"</span> as an attribute of the h1</strong>, nested directly under the Product's div.
+                        </p>
+                        <!--
+                            End Answer
+                        -->
+                    </div>
+                </li>
+                <li id="xmlValidate" class="questionContainer">
+                    <div class="prompt">
+                        <p>
+                            <span class="prefix">Prompt:</span> The attached file xml/productFeed.xml is not quite right. Make changes to the file that you think are necessary to make it valid. Write a message to your client explaining what issues you found that they need to fix. Here is the <a href="https://knowledge.bazaarvoice.com/wp-content/conversations/en_US/Collect/product_feed.html">Knowledge Base section</a> on product feeds. This <a href="https://knowledge.bazaarvoice.com/wp-content/conversations/en_US/Collect/product_feed.html#step-3-validate-the-feed">section on validation</a> will be particularly useful.
+                        </p>
+                    </div>
+                    <div class="answer">
+                        <p>
+                            <span class="prefix">Answer:</span>
+                        </p>
+                        <!-- 
+                            TODO - Begin Answer 
+                        -->
+                        <p>
+                            According to <a href="https://knowledge.bazaarvoice.com/wp-content/conversations/en_US/Collect/product_feed.html">Bazaarvoice Catalog Feed documentation</a>, 2 required fields were missing in productFeed.xml, more specifically in the <i>Products</i> section :
+                            <ul>
+                                <li>There must be a proper description for each <i>Product</i>, associated to the <strong><i>Description</i></strong> field</li>
+                                <li>At least one manufacturer part number must be present. These are instrumental for enabling review syndication. Each number must be embedded in a <i>ManufacturerPartNumber</i> field, which in nested in the <i>Product</i>'s <strong><i>ManufacturerPartNumbers</i></strong> field</li>
+                            </ul>
+                        </p>
+                        <p>
+                            Those fields have been added to <i>productFeed.xml</i>.
+                        </p>
+                        <!-- 
+                            End Answer
+                        -->
+                    </div>
+                </li>
+                
+                <li id="schemaOrg" class="questionContainer">
+                    <div class="prompt">
+                        <p>
+                            <span class="prefix">Prompt:</span> Please explain - to a non-technical person - the difference between server side and client side rendering. Be sure to include how templates and AJAX relate to the different ways to render content.
+                        </p>
+                    </div>
+                    <div class="answer">
+                        <p>
+                            <span class="prefix">Answer:</span>
+                        </p>
+                        <!--TODO - Begin Answer -->
+                        <p>
+                            <strong>Server-side rendering</strong> means that the content is generated by the server application itself, i.e. the server application includes the HTML content (to be displayed) directly in the HTTP response, which will be returned to the browser and displayed as is. The rendered content can of course be dynamic. In that case, the server application manages the changing content via HTML templates, which is basically an HTML file, including some variables, changed on the fly by the application (for example, all product pages are derived from the same HTML file). This is historically by far the most common way of delivering content on the web.
+                        </p>
+                        <p>
+                            <strong>Client-side rendering</strong> is a bit more tricky: in this case, the Javascript code on the client side (which has been returned from the server to the browser, through an HTTP response) has the responsability of displaying the HTML content properly. Typically, the Javascript code performs a series of HTTP requests (using AJAX for example) to different services (located on the same server, or on several servers), to fetch the adequate content. Once fetched, the Javascript code arrange and display the content for the user. This method of rendering has gain a lot of popularity in the last few years, through the adoption of Javascript frameworks such as React, Vue or Angular JS.
+                        </p>
+                        <!--
+                            End Answer
+                        -->
+                    </div>
+                </li>
+            </ol>
+            </div>
+        </div>
+        <script type="text/javascript" src="js/syntaxhighlighter/scripts/shCore.js"></script>
+        <script type="text/javascript" src="js/syntaxhighlighter/scripts/shBrushXml.js"></script>
+        <script type="text/javascript" src="js/syntaxhighlighter/scripts/shBrushJScript.js"></script>
+        <script type="text/javascript" src="js/questions.js"></script>
+        <script type="text/javascript" src="js/scripts.js"></script>
+</body>
+
+</html>
